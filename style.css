@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 3.1vh;
+}
+
+body{
+    overflow: hidden;
+    margin: 0;
+    padding: 1vh 3vw;
+    background: black;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    font-weight: bold;
+    opacity: 0.55;
+}
+
+.txt{
+    font-size: 3.5vh;
+    text-transform: uppercase;
+}
+
+.first{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 0px 6px 10px;
+    color: white;
+    width: 170px;
+    height: 55px;
+    animation: blink .5s ease .4s infinite alternate;
+}
+
+@keyframes blink{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.box{
+    display: flex;
+    position: relative;
+    top: 8px;
+    justify-content: space-between;
+}
+
+.pulse{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pulse-1{
+    background-color: white;
+    width: 6.5px;
+    height: 6.5px;
+    border-radius: 50%;
+    margin-left: 6px;
+    animation: pulse .4s ease .0s infinite alternate;
+}
+.pulse-2{
+    background-color: white;
+    width: 6.5px;
+    height: 6.5px;
+    border-radius: 50%;
+    margin-left: 6px;
+    animation: pulse .4s ease .2s infinite alternate;
+}
+.pulse-3{
+    background-color: white;
+    width: 6.5px;
+    height: 6.5px;
+    border-radius: 50%;
+    margin-left: 6px;
+    animation: pulse .4s ease .4s infinite alternate;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 10;
+    position: relative;
+    bottom: 410px;
+}
+
+.hacked{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px limegreen solid;
+    color: limegreen;
+    width: 30vw;
+    height: 25vh;
+    padding: 20px;
+}
+
+i{
+    font-size: 70px;
+    color: limegreen;
+}
+
+.danger{
+    margin-top: 10px;
+}
+
+p {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 3.1vh;
+    margin: 0;
+    padding: 0;
+    color: limegreen;
+    text-shadow: 0px 0px 10px limegreen;
+    opacity: 0.30;
+  }
+
+@keyframes pulse{
+    from{
+        opacity: 1;
+        transform: scale(1);
+    }
+    to{
+        opacity: 0.25;
+        transform: scale(0.75);
+    }
+}
+
+@media only screen and (max-width: 600px){
+   *{
+        font-size: 2vh;
+        overflow: hidden;
+    }
+   
+    .txt{
+        font-size: 3vh;
+    }
+
+    .parent{
+       top: -900px;
+    }
+
+    .hacked{
+    width: 70vw;
+    height: 15vh;
+    }
+
+    i{
+        font-size: 20px;
+    }
+}
