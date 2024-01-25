@@ -156,6 +156,10 @@ p {
     height: 15vh;
     }
 
+    .msg{
+        padding: 5px;
+    }
+
     .danger{
         margin-top: 0px;
     }
