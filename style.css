@@ -161,11 +161,10 @@ p {
     }
 
     .danger{
-        margin-top: 0px;
+        margin-top: 5px;
     }
 
     i{
-        margin-top: 5px;
         font-size: 25px;
     }
 }
