@@ -156,6 +156,10 @@ p {
     height: 15vh;
     }
 
+    .danger{
+        margin-top: 5px;
+    }
+
     i{
         font-size: 20px;
     }
